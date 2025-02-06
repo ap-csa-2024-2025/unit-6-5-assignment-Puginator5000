@@ -5,9 +5,12 @@ public class Main
   public static void main(String[] args)
   {
     // Create some arrays here to test your methods
-    String[] arr = {"bananas", "apples", "peaches", "pears", "oranges"};
+    //String[] arr = {"bananas", "apples", "peaches", "pears", "oranges"};
+    // double[] arr = {1.0, 2.3, 3.6, 4.2, 5.0};
+    //int[] arr = {1, 2, 3, 4, 5};
 
-    reverse(arr);
+    //average(arr);
+    //reverse(arr);
   }
 
   public static void reverse(String[] arr)
@@ -22,17 +25,26 @@ public class Main
   }
 }
 
-  public int product(int[] arr)
+  public static int product(int[] arr)
   {
-    // for (int[]num : arr) {
-      
-    // }
+    int ans = 0;
 
-    return 0;
+    for (int num : arr) {
+      ans *= num;
+    }
+
+    return ans;
   }
 
-  public double average(double[] arr)
+  public static double average(double[] arr)
   {
-    return 0.0;
+    double avg = 0;
+
+    for (double num : arr) {
+      avg += num;
+    }
+    avg = avg / arr.length;
+    
+    return avg;
   }
 }

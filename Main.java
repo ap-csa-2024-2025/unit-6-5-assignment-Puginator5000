@@ -27,7 +27,7 @@ public class Main
 
   public static int product(int[] arr)
   {
-    int ans = 0;
+    int ans = 1;
 
     for (int num : arr) {
       ans *= num;
